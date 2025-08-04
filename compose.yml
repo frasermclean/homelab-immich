@@ -44,6 +44,11 @@ services:
       - traefik.enable=true
       - traefik.http.routers.immich.rule=Host(`immich.${DOMAIN}`)
       - traefik.http.routers.immich.tls.certresolver=cloudflare
+      - homepage.group=Media
+      - homepage.name=Immich
+      - homepage.description=Photo and video library
+      - homepage.icon=immich
+      - homepage.href=https://immich.${DOMAIN}
 
   # Immich machine learning service
   machine-learning:
