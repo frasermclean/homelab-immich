@@ -49,6 +49,10 @@ services:
       - homepage.description=Photo and video library
       - homepage.icon=immich
       - homepage.href=https://immich.${DOMAIN}
+      - homepage.widget.type=immich
+      - homepage.widget.version=2
+      - homepage.widget.url=http://immich-server:2283
+      - homepage.widget.key=${WIDGET_API_KEY}
 
   # Immich machine learning service
   machine-learning:
