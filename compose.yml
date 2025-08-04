@@ -31,7 +31,6 @@ services:
       - DB_PASSWORD=${POSTGRES_PASSWORD}
       - DB_DATABASE_NAME=${POSTGRES_DB:-immich}
       - REDIS_HOSTNAME=cache
-      - IMMICH_TELEMETRY_INCLUDE=all
     volumes:
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
